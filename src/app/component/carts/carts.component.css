@@ -1,0 +1,49 @@
+.cart-table {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: none;
+  word-wrap: break-word;
+  background: #fff;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.table > :not(caption) > * > * {
+  border-bottom-width: 0px;
+}
+
+.center .btn {
+  font-size: 14px !important;
+  margin-top: 20px !important;
+  padding: 12px 72px;
+  font-weight: 400;
+  border-radius: 3px !important;
+}
+
+.card {
+  height: 60vh;
+  margin: 25px;
+  padding: 25px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.center img {
+  width: 250px;
+  height: 162px;
+  border: none;
+  outline: none;
+  margin: 20px 0;
+  color: inherit;
+  text-decoration: none;
+}
+.center h4, .center h6 {
+  font-weight: 400;
+}/*# sourceMappingURL=carts.component.css.map */
