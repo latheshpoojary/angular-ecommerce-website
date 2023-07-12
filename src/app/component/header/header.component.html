@@ -1,15 +1,17 @@
 <div class="navbar navbar-dark bg-primary shadow-sm">
     <div class="navbar-brand align-item-center d-flex">
         <i style="font-size: 40px;" class="fas fa-shipping-fast">&nbsp;</i>
-        <strong style="font-size: 30px;">Let'Shop</strong>
+        <strong style="font-size: 30px;">LuxeMart</strong>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="search product here...">
+            <input type="text" class="form-control" placeholder="search product here..." [(ngModel)]="searchTerm" (keyup)="search($event)">
         </div>
         <i class="fas fa-search search-icon"></i>
     </div>
-    <button class="btn btn-primary">
+    <button class="btn btn-primary" routerLink="/cart">
         <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
-        <div style="font-size: 10px;" class="badge bg-danger">5</div>
+  
+  
+  <div style="font-size: 10px;" class="badge bg-danger">{{totalcartItem}}</div>
     </button>
 </div>
 <!-- <app-products></app-products> -->
